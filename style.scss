@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display:wght@500;700;900=swap');
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+   --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+   --Dark-blue: hsl(223, 47%, 23%);
+}
+
+::before,
+::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    // background: var(--Pale-blue);
+    background: url("../images/pattern-background-desktop.svg"),
+    hsl(225, 100%, 94%);
+    background-repeat: no-repeat,repeat;
+    background-position:top left , bottom right;
+    font-size:16px; 
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 4rem 2rem ;
+    max-width: 1080px;
+
+    section{
+        background: white;
+        border-radius: 8px;
+        text-align: center;
+        padding-bottom: 1rem;
+        
+        .header-img img{
+             width: 100%;
+             border-top-left-radius: 8px;
+             border-top-right-radius: 8px;
+        }
+        .Header-content {
+            h2{
+                color: var(--Dark-blue);
+                font-weight: bold 900;
+                
+            }
+            p{
+               color: var(--Desaturated-blue);
+               font-size: 16px;
+             margin: 0 auto;
+               max-width: 300px;
+               margin-top: 0rem;
+
+            }
+        }
+
+        .report{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color:var(--Very-pale-blue);
+            margin:1rem 4rem;
+            border-radius: 8px;
+            span{
+                h3{
+                    color: var(--Dark-blue);
+                    font-weight: bolder;
+                }
+                p{
+                    margin-top: -1rem;
+                    font-size: 16px;
+                    font-weight: 800;
+                    color: var(--Desaturated-blue);
+                }
+            }
+            h4 a{
+                color: var(--Bright-blue);
+                &:hover{
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+            }
+        }
+        .payment{
+
+            .continue-payment{
+                border-radius: 8px;
+                margin: 2rem 4rem;
+                padding: .8rem;
+                color: white;
+                background-color:var(--Bright-blue);
+                box-shadow: 10px 10px var(--Pale-blue);
+                &:hover{
+                   background-color: 
+                    rgb(112, 102, 222);;
+                    // opacity: 1;
+                    cursor: pointer;
+                }
+            }
+            .end-payment{
+                color: var(--Dark-blue);
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+}

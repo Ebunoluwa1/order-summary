@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display:wght@500;700;900=swap");
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url("../images/pattern-background-desktop.svg"), #e0e8ff;
+  background-repeat: no-repeat,repeat;
+  background-position: top left , bottom right;
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  max-width: 1080px;
+}
+
+main section {
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+main section .header-img img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+main section .Header-content h2 {
+  color: var(--Dark-blue);
+  font-weight: bold 900;
+}
+
+main section .Header-content p {
+  color: var(--Desaturated-blue);
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 300px;
+  margin-top: 0rem;
+}
+
+main section .report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: var(--Very-pale-blue);
+  margin: 1rem 4rem;
+  border-radius: 8px;
+}
+
+main section .report span h3 {
+  color: var(--Dark-blue);
+  font-weight: bolder;
+}
+
+main section .report span p {
+  margin-top: -1rem;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--Desaturated-blue);
+}
+
+main section .report h4 a {
+  color: var(--Bright-blue);
+}
+
+main section .report h4 a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+main section .payment .continue-payment {
+  border-radius: 8px;
+  margin: 2rem 4rem;
+  padding: .8rem;
+  color: white;
+  background-color: var(--Bright-blue);
+  -webkit-box-shadow: 10px 10px var(--Pale-blue);
+          box-shadow: 10px 10px var(--Pale-blue);
+}
+
+main section .payment .continue-payment:hover {
+  background-color: #7066de;
+  cursor: pointer;
+}
+
+main section .payment .end-payment {
+  color: var(--Dark-blue);
+  font-weight: bold;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
